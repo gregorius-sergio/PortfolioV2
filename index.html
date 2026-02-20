@@ -4,9 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gregorius Sergio | Terminal Portfolio</title>
-    <!-- Tailwind CSS CDN -->
+    <!-- Tailwind CSS CDN (Tanpa Custom Config, menggunakan System Fonts) -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
+        /* THE 80% SCALING MAGIC */
+        /* Menyusutkan seluruh elemen Tailwind (yang berbasis rem) sebesar 20% secara proporsional */
+        html { 
+            font-size: 80%; 
+        }
+
         /* Custom CSS Ringan */
         body { 
             background-color: #1A1A1C; 
@@ -138,6 +144,7 @@
                         </h4>
                         <span class="block text-[#E08EAD] text-xs font-mono uppercase tracking-widest mb-8 opacity-80">Beberapa hal yang cukup saya minati dan sedang saya pelajari:</span>
                         <div class="grid grid-cols-2 gap-3 md:gap-4">
+                            <!-- Dikembalikan ke font realistis seperti semula -->
                             <span class="border border-[#FFC857]/30 text-[#FFC857] px-2 py-3 text-xs md:text-sm font-mono text-center transition-all duration-300 hover:bg-[#FFC857] hover:text-[#1A1A1C] hover:border-[#FFC857] cursor-crosshair">Crypto</span>
                             <span class="border border-[#FFC857]/30 text-[#FFC857] px-2 py-3 text-xs md:text-sm font-mono text-center transition-all duration-300 hover:bg-[#FFC857] hover:text-[#1A1A1C] hover:border-[#FFC857] cursor-crosshair">Quantitative Trading</span>
                             <span class="border border-[#FFC857]/30 text-[#FFC857] px-2 py-3 text-xs md:text-sm font-mono text-center transition-all duration-300 hover:bg-[#FFC857] hover:text-[#1A1A1C] hover:border-[#FFC857] cursor-crosshair">Investment</span>
